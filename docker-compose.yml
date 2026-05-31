@@ -1,0 +1,7 @@
+services:
+  bot:
+    build: .
+    container_name: fikrxona_bot
+    restart: unless-stopped
+    volumes:
+      - ./fikrxona.db:/app/fikrxona.db
